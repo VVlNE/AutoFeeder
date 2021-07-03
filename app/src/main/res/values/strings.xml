@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AutoFeeder</string>
+    <string name="settings_button">Настройки</string>
+    <string name="settings_title">Настройки</string>
+    <string name="cat_name">Имя кота</string>
+    <string name="enter_cat_name">Введите имя кота</string>
+    <string name="feeding_time">Время кормлений</string>
+    <string name="save_button">Сохранить</string>
+    <string name="cancel_button">Отменить</string>
+    <string name="add_time_item">Добавить новое время</string>
+    <string name="feeding_cat_button">Кормить кота</string>
+    <string name="food">Еда</string>
+    <string name="water">Вода</string>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="LightApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/darkGray</item>
+        <item name="colorPrimaryDark">@color/darkGray</item>
+        <item name="colorAccent">@color/yandexYellow</item>
+        <item name="android:windowBackground">@color/darkGray</item>
+        <item name="android:textColorPrimary">@color/absoluteWhite</item>
+        <item name="android:textColor">@color/absoluteWhite</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="TimePickerDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/mediumGray</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+</resources>

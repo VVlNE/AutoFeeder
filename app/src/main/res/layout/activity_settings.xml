@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|fill_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|bottom"
+                    android:paddingLeft="15dp"
+                    android:text="@string/cat_name"/>
+
+                <EditText
+                    android:id="@+id/editCatName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_text_style"
+                    android:gravity="left|center"
+                    android:hint="@string/enter_cat_name"
+                    android:paddingLeft="15dp"
+                    android:textColorHint="@color/veryLightGray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|bottom"
+                    android:paddingLeft="15dp"
+                    android:text="@string/feeding_time"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/edit_text_style">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/editFeedingTimeList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+                    <ImageButton
+                        android:id="@+id/addTimeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/button_selector"
+                        android:src="@drawable/add_item"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:text="@string/save_button"
+            android:textColor="@color/yandexYellow"/>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:text="@string/cancel_button"
+            android:textColor="@color/yandexYellow"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

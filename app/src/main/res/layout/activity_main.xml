@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|fill_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <TextView
+                    android:id="@+id/food"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|center"
+                    android:textColor="@color/yandexYellow"
+                    android:paddingLeft="15dp"
+                    android:text="@string/food"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider"
+                    android:orientation="vertical"
+                    android:background="@drawable/edit_text_style">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="left|center"
+                        android:paddingLeft="15dp"
+                        android:text="@string/feeding_time"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/veryLightGray"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/feedingTimeList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/veryLightGray"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+
+                    <TextView
+                        android:id="@+id/lastFeeding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:textSize="12dp"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/veryLightGray"/>
+
+                    <TextView
+                        android:id="@+id/foodLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:textSize="12dp"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/veryLightGray"/>
+
+                    <Button
+                        android:id="@+id/feedingCatButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/button_selector"
+                        android:textColor="@color/absoluteWhite"
+                        android:text="@string/feeding_cat_button"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/water"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|center"
+                    android:textColor="@color/yandexYellow"
+                    android:paddingLeft="15dp"
+                    android:text="@string/water"/>
+
+                <TextView
+                    android:id="@+id/hasWater"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|center"
+                    android:background="@drawable/edit_text_style"
+                    android:textSize="12dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/veryLightGray"/>
+
+                <Button
+                    android:id="@+id/settingsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_selector"
+                    android:textColor="@color/yandexYellow"
+                    android:text="@string/settings_button"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

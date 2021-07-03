@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="darkGray">#151515</color>
+    <color name="mediumGray">#272727</color>
+    <color name="lightGray">#333333</color>
+    <color name="veryLightGray">#B5B5B5</color>
+    <color name="absoluteWhite">#FFFFFF</color>
+    <color name="yandexYellow">#ffcc00</color>
+</resources>
